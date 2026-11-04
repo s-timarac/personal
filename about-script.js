@@ -15,7 +15,7 @@ function renderCalendar() {
     daysEl.textContent = "";
     titleEl.textContent = MONTHS[viewMonth] + " " + viewYear;
 
-    const firstWeekday = new Date(viewYear, viewMonth, 1).getDay(); // 0 = sunday
+    const firstWeekday = (new Date(viewYear, viewMonth, 1).getDay() + 6) % 7;
     const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
     const daysInPrev = new Date(viewYear, viewMonth, 0).getDate();
     const cells = Math.ceil((firstWeekday + daysInMonth) / 7) * 7;

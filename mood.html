@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>moodboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="icon" type="image/png" href="pics/favicon.png" />
+    <script>
+        try {
+            var t = localStorage.getItem("theme");
+            if (t === "dark") document.documentElement.dataset.theme = "dark";
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="site-frame">
+            <header class="welcome-bar"><span class="rosette">☆</span>welcome to my website! feel free to leave a
+                message in my <a class="guestbook-link" href="index.html#guestbook">guestbook!</a><span
+                    class="rosette">☆</span></header>
+            <div class="site-grid">
+                <aside class="left-side">
+                    <section class="calendar">
+                        <div class="calendar-head"><button type="button" id="cal-prev"
+                                aria-label="previous month">&lt;</button><b id="cal-title"
+                                title="back to today"></b><button type="button" id="cal-next"
+                                aria-label="next month">&gt;</button></div>
+                        <div class="week"><i>m</i><i>tu</i><i>w</i><i>th</i><i>f</i><i>sa</i><i>su</i></div>
+                        <div class="days" id="days"></div>
+                    </section>
+                    <nav aria-label="Site directory">
+                        <section class="menu-group">
+                            <h2><span>*</span> directory</h2>
+                            <div class="link-list green"><button type="button" data-page="index">index</button><button
+                                    type="button" data-page="about me">about me</button><button type="button"
+                                    data-page="wishlist">wishlist</button><button type="button"
+                                    data-page="log">log</button><button type="button" data-page="moodboard"
+                                    class="selected">moodboard</button><button type="button" data-page="games">video
+                                    games</button></div>
+                        </section>
+                        <section class="menu-group">
+                            <h2><span>*</span> extras</h2>
+                            <div class="link-list pink"><button type="button"
+                                    data-page="credits">credits</button><button type="button" data-page="websites">cool
+                                    websites</button><button type="button" data-page="music">music</button></div>
+                        </section>
+                        <section class="menu-group">
+                            <h2><span>*</span> find me on</h2>
+                            <div class="link-list blue"><a href="https://www.pinterest.com/disperzija/" target="_blank"
+                                    rel="noopener noreferrer" style="text-decoration:none"><button type="button"
+                                        data-page="pinterest">pinterest</button></a><a
+                                    href="https://quxnet.net/u/just70khz" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration:none"><button type="button"
+                                        data-page="quxnet">quxnet</button></a><a href="https://cyberspace.org/"
+                                    target="_blank" rel="noopener noreferrer" style="text-decoration:none"><button
+                                        type="button" data-page="cyberspace">cyberspace</button></a><a
+                                    href="https://letterboxd.com/70khz/" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration:none"><button type="button"
+                                        data-page="nekoweb">letterboxd</button></a></div>
+                        </section>
+                    </nav>
+                    <section class="mini-profile" style="font-size:9px"><b>sofija is currently...</b>
+                        <p><strong>WATCHING</strong> the mentalist</p>
+                        <p><strong>LISTENING TO</strong> nostalgic nintendo music</p>
+                        <p><strong>PLAYING</strong> the sims 4</p>
+                        <p><strong>READING</strong> none</p>
+                    </section>
+                </aside>
+                <main class="content">
+                    <div class="banner"><img src="pics/class.jpg" alt="classroom" />
+                        <h1>moodboard</h1>
+                    </div>
+                    <div class="clock-bar"><span> </span><time id="clock"></time><button type="button" id="theme-toggle"
+                            class="theme-toggle">dark mode</button></div>
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>things i found on pinterest</h2>
+                        <div class="intro-row">
+                            <div class="clover" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                            <div>
+                                <p>a collection of aesthetic images and inspiration saved from pinterest.</p>
+                                <p>image tiles are placeholders for pins and their source links.</p>
+                            </div>
+                        </div>
+                        <nav class="moodboard-nav" aria-label="Browse moodboard categories">
+                            <a href="#nature">nature</a>
+                            <a href="#guitars">guitars</a>
+                            <a href="#style">style</a>
+                            <a href="#details">little details</a>
+                        </nav>
+                    </section>
+                    <section class="content-box" id="nature">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>nature</h2>
+                        <div class="moodboard-grid">
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>nature image / pinterest source</p></article>
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>nature image / pinterest source</p></article>
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>nature image / pinterest source</p></article>
+                        </div>
+                    </section>
+                    <section class="content-box" id="guitars">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>guitars</h2>
+                        <div class="moodboard-grid">
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder"><img src="https://i.pinimg.com/736x/aa/80/b2/aa80b2fdf1ee8e9ec4c31a7a5caeae7c.jpg" alt="Guitar 1"></div><p>guitar / music image and source</p></article>
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder"><img src="https://i.pinimg.com/736x/6e/33/28/6e332870d293721fd6931bec950a9dc1.jpg" alt="Guitar 2"></div><p>guitar / music image and source</p></article>
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder"><img src="guitar3.jpg" alt="Guitar 3"></div><p>guitar / music image and source</p></article>
+                        </div>
+                    </section>
+                    <section class="content-box" id="style">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>style</h2>
+                        <div class="moodboard-grid">
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>fashion / style image and source</p></article>
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>fashion / style image and source</p></article>
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>fashion / style image and source</p></article>
+                        </div>
+                    </section>
+                    <section class="content-box" id="details">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>little details</h2>
+                        <div class="moodboard-grid">
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>small inspiration image and source</p></article>
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>small inspiration image and source</p></article>
+                            <article class="mood-pin"><div class="mood-image-placeholder" role="img" aria-label="Pinterest image placeholder">pin image goes here</div><p>small inspiration image and source</p></article>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer><span> ☆</span> made by sofija in 2026.<span> ☆</span></footer>
+        </div>
+    </div>
+    <script src="theme.js"></script>
+    <script src="about-script.js"></script>
+</body>
+
+</html>

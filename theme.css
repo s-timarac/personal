@@ -31,6 +31,11 @@ html[data-theme="dark"] {
     --text: #d9ccc6;
 }
 
+html[data-theme="dark"] *::-webkit-scrollbar-thumb {
+    border-radius: 0 !important;
+    background: #75615f !important;
+}
+
 html[data-theme="dark"] ::selection {
     background-color: rgba(244, 180, 195, 0.35);
 }
@@ -126,9 +131,9 @@ html[data-theme="dark"] .days .today {
 
 html[data-theme="dark"] .days .other,
 html[data-theme="dark"] .days .other:hover {
-    color: #6a5c58;
-    border-color: #3e3236;
-    background: #2f2428;
+    color: #a7b383;
+    border-color: #586343;
+    background: #303a27;
 }
 
 /* sidebar menus */
@@ -209,6 +214,101 @@ html[data-theme="dark"] .box-title .tiny-icon {
 
 html[data-theme="dark"] .clover i {
     background: #7e8b4d;
+}
+
+html[data-theme="dark"] .wishlist-image-placeholder {
+    color: #a8978f;
+    border-color: #6b5d58;
+    background: repeating-linear-gradient(135deg, #2a2024 0 8px, #33282c 8px 16px);
+}
+
+html[data-theme="dark"] .wishlist-item + .wishlist-item {
+    border-top-color: #6b5d58;
+}
+
+html[data-theme="dark"] .log-entry + .log-entry,
+html[data-theme="dark"] .diary-entry + .diary-entry {
+    border-top-color: #6b5d58;
+}
+
+html[data-theme="dark"] .log-image-placeholder,
+html[data-theme="dark"] .album-cover-placeholder {
+    color: #a8978f;
+    border-color: #6b5d58;
+    background: repeating-linear-gradient(135deg, #2a2024 0 8px, #33282c 8px 16px);
+}
+
+html[data-theme="dark"] .diary-entry h3,
+html[data-theme="dark"] .album-card h3 {
+    color: #e0a3b8;
+}
+
+html[data-theme="dark"] .album-nav a {
+    color: #e0a3b8;
+    border-color: #6b5d58;
+}
+
+html[data-theme="dark"] .album-nav a:hover {
+    background: var(--pink);
+}
+
+html[data-theme="dark"] .album-card {
+    border-color: #6b5d58;
+    background: #2f2428;
+}
+
+html[data-theme="dark"] .moodboard-nav a {
+    color: #e0a3b8;
+    border-color: #6b5d58;
+}
+
+html[data-theme="dark"] .moodboard-nav a:hover {
+    background: var(--pink);
+}
+
+html[data-theme="dark"] .mood-pin {
+    border-color: #6b5d58;
+    background: #2f2428;
+}
+
+html[data-theme="dark"] .mood-image-placeholder {
+    color: #a8978f;
+    border-color: #6b5d58;
+    background: repeating-linear-gradient(135deg, #2a2024 0 8px, #33282c 8px 16px);
+}
+
+html[data-theme="dark"] .playlist-card {
+    color: #d9ccc6;
+    border-color: rgba(217, 204, 198, 0.55);
+    background: rgba(42, 32, 36, 0.82);
+}
+
+html[data-theme="dark"] .playlist-featured {
+    background: linear-gradient(100deg, #343d5b, #424a5a, #293d52);
+}
+
+html[data-theme="dark"] .playlist-alt {
+    background: linear-gradient(100deg, #344237, #3e4842, #343b3b);
+}
+
+html[data-theme="dark"] .playlist-vaporwave {
+    background: linear-gradient(100deg, #29494b, #403e56, #503a53);
+}
+
+html[data-theme="dark"] .playlist-soundtrack {
+    background: linear-gradient(100deg, #514330, #503840, #34432f);
+}
+
+html[data-theme="dark"] .playlist-dream {
+    background: linear-gradient(100deg, #53384b, #364454, #48384e);
+}
+
+html[data-theme="dark"] .playlist-indie {
+    background: linear-gradient(100deg, #424a31, #514332, #4d3a32);
+}
+
+html[data-theme="dark"] .playlist-electronic {
+    background: linear-gradient(100deg, #2c4748, #3b3a5a, #50374f);
 }
 
 /* index: status + update log */

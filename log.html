@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>log</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="icon" type="image/png" href="pics/favicon.png" />
+    <script>
+        try {
+            var t = localStorage.getItem("theme");
+            if (t === "dark") document.documentElement.dataset.theme = "dark";
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="site-frame">
+            <header class="welcome-bar"><span class="rosette">☆</span>welcome to my website! feel free to leave a
+                message in my <a class="guestbook-link" href="index.html#guestbook">guestbook!</a><span
+                    class="rosette">☆</span></header>
+            <div class="site-grid">
+                <aside class="left-side">
+                    <section class="calendar">
+                        <div class="calendar-head"><button type="button" id="cal-prev"
+                                aria-label="previous month">&lt;</button><b id="cal-title"
+                                title="back to today"></b><button type="button" id="cal-next"
+                                aria-label="next month">&gt;</button></div>
+                        <div class="week"><i>m</i><i>tu</i><i>w</i><i>th</i><i>f</i><i>sa</i><i>su</i></div>
+                        <div class="days" id="days"></div>
+                    </section>
+                    <nav aria-label="Site directory">
+                        <section class="menu-group">
+                            <h2><span>*</span> directory</h2>
+                            <div class="link-list green"><button type="button" data-page="index">index</button><button
+                                    type="button" data-page="about me">about me</button><button type="button"
+                                    data-page="wishlist">wishlist</button><button type="button" data-page="log"
+                                    class="selected">log</button><button type="button"
+                                    data-page="moodboard">moodboard</button><button type="button"
+                                    data-page="games">video games</button></div>
+                        </section>
+                        <section class="menu-group">
+                            <h2><span>*</span> extras</h2>
+                            <div class="link-list pink"><button type="button"
+                                    data-page="credits">credits</button><button type="button" data-page="websites">cool
+                                    websites</button><button type="button" data-page="music">music</button></div>
+                        </section>
+                        <section class="menu-group">
+                            <h2><span>*</span> find me on</h2>
+                            <div class="link-list blue"><a href="https://www.pinterest.com/disperzija/" target="_blank"
+                                    rel="noopener noreferrer" style="text-decoration:none"><button type="button"
+                                        data-page="pinterest">pinterest</button></a><a
+                                    href="https://quxnet.net/u/just70khz" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration:none"><button type="button"
+                                        data-page="quxnet">quxnet</button></a><a href="https://cyberspace.org/"
+                                    target="_blank" rel="noopener noreferrer" style="text-decoration:none"><button
+                                        type="button" data-page="cyberspace">cyberspace</button></a><a
+                                    href="https://letterboxd.com/70khz/" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration:none"><button type="button"
+                                        data-page="nekoweb">letterboxd</button></a></div>
+                        </section>
+                    </nav>
+                    <section class="mini-profile" style="font-size:9px"><b>sofija is currently...</b>
+                        <p><strong>WATCHING</strong> the mentalist</p>
+                        <p><strong>LISTENING TO</strong> nostalgic nintendo music</p>
+                        <p><strong>PLAYING</strong> the sims 4</p>
+                        <p><strong>READING</strong> none</p>
+                    </section>
+                </aside>
+                <main class="content">
+                    <div class="banner"><img src="pics/bgbgbg.jpg" alt="Soft flowers" />
+                        <h1>my log</h1>
+                    </div>
+                    <div class="clock-bar"><span> </span><time id="clock"></time><button type="button" id="theme-toggle"
+                            class="theme-toggle">dark mode</button></div>
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>little records</h2>
+                        <div class="intro-row">
+                            <div class="clover" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                            <div>
+                                <p>a place for the films i've watched and small notes from everyday life.</p>
+                                <p>these are placeholders until i'm ready to fill in my entries.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>movies i've watched</h2>
+                        <div class="log-list">
+                            <article class="log-entry">
+                                <div class="log-image-placeholder" role="img" aria-label="Movie poster placeholder">
+                                    movie poster</div>
+                                <ul class="star-list">
+                                    <li>movie title placeholder</li>
+                                    <li>date watched / rating / thoughts</li>
+                                </ul>
+                            </article>
+                            <article class="log-entry">
+                                <div class="log-image-placeholder" role="img" aria-label="Movie poster placeholder">
+                                    movie poster</div>
+                                <ul class="star-list">
+                                    <li>movie title placeholder</li>
+                                    <li>date watched / rating / thoughts</li>
+                                </ul>
+                            </article>
+                            <article class="log-entry">
+                                <div class="log-image-placeholder" role="img" aria-label="Movie poster placeholder">
+                                    movie poster</div>
+                                <ul class="star-list">
+                                    <li>movie title placeholder</li>
+                                    <li>date watched / rating / thoughts</li>
+                                </ul>
+                            </article>
+                            <article class="log-entry">
+                                <div class="log-image-placeholder" role="img" aria-label="Movie poster placeholder">
+                                    movie poster</div>
+                                <ul class="star-list">
+                                    <li>movie title placeholder</li>
+                                    <li>date watched / rating / thoughts</li>
+                                </ul>
+                            </article>
+                            <article class="log-entry">
+                                <div class="log-image-placeholder" role="img" aria-label="Movie poster placeholder">
+                                    movie poster</div>
+                                <ul class="star-list">
+                                    <li>movie title placeholder</li>
+                                    <li>date watched / rating / thoughts</li>
+                                </ul>
+                            </article>
+                            <article class="log-entry">
+                                <div class="log-image-placeholder" role="img" aria-label="Movie poster placeholder">
+                                    movie poster</div>
+                                <ul class="star-list">
+                                    <li>movie title placeholder</li>
+                                    <li>date watched / rating / thoughts</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>diary</h2>
+                        <div class="diary-list">
+                            <article class="diary-entry">
+                                <h3>date / entry title placeholder</h3>
+                                <p>a little diary entry will go here...</p>
+                            </article>
+                            <article class="diary-entry">
+                                <h3>date / entry title placeholder</h3>
+                                <p>a little diary entry will go here...</p>
+                            </article>
+                            <article class="diary-entry">
+                                <h3>date / entry title placeholder</h3>
+                                <p>a little diary entry will go here...</p>
+                            </article>
+                            <article class="diary-entry">
+                                <h3>date / entry title placeholder</h3>
+                                <p>a little diary entry will go here...</p>
+                            </article>
+                            <article class="diary-entry">
+                                <h3>date / entry title placeholder</h3>
+                                <p>a little diary entry will go here...</p>
+                            </article>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer><span> ☆</span> made by sofija in 2026.<span> ☆</span></footer>
+        </div>
+    </div>
+    <script src="theme.js"></script>
+    <script src="about-script.js"></script>
+</body>
+
+</html>

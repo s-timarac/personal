@@ -9,6 +9,11 @@
         else delete root.dataset.theme;
         btn.textContent = dark ? "light mode" : "dark mode";
         btn.setAttribute("aria-pressed", String(dark));
+        document.querySelectorAll("iframe[data-theme-aware]").forEach((iframe) => {
+            const embedUrl = new URL(iframe.src);
+            embedUrl.searchParams.set("theme", dark ? "0" : "1");
+            if (iframe.src !== embedUrl.href) iframe.src = embedUrl.href;
+        });
     }
 
     apply(root.dataset.theme === "dark");
