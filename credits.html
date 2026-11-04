@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>credits - sofija's website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="icon" type="image/png" href="pics/favicon.png" />
+
+    <script>
+        try {
+            var t = localStorage.getItem("theme");
+            if (t === "dark") document.documentElement.dataset.theme = "dark";
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="site-frame">
+
+            <header class="welcome-bar">
+                <span class="rosette">☆</span>
+                welcome to my website! feel free to leave a message in my
+                <a class="guestbook-link" href="index.html#guestbook">guestbook!</a>
+                <span class="rosette">☆</span>
+            </header>
+
+            <div class="site-grid">
+                <aside class="left-side">
+                    <section class="calendar">
+                        <div class="calendar-head">
+                            <button type="button" id="cal-prev" aria-label="previous month">&lt;</button>
+                            <b id="cal-title" title="back to today"></b>
+                            <button type="button" id="cal-next" aria-label="next month">&gt;</button>
+                        </div>
+                        <div class="week">
+                            <i>su</i><i>m</i><i>tu</i><i>w</i><i>th</i><i>f</i><i>sa</i>
+                        </div>
+                        <div class="days" id="days"></div>
+                    </section>
+
+                    <nav aria-label="Site directory">
+                        <section class="menu-group">
+                            <h2><span>*</span> directory</h2>
+                            <div class="link-list green">
+                                <button type="button" data-page="index">index</button>
+                                <button type="button" data-page="about me">about me</button>
+                                <button type="button" data-page="wishlist">wishlist</button>
+                                <button type="button" data-page="log">log</button>
+                                <button type="button" data-page="moodboard">moodboard</button>
+                                <button type="button" data-page="games">video games</button>
+                            </div>
+                        </section>
+
+                        <section class="menu-group">
+                            <h2><span>*</span> extras</h2>
+                            <div class="link-list pink">
+                                <button type="button" data-page="credits" class="selected">credits</button>
+                                <button type="button" data-page="websites">cool websites</button>
+                                <button type="button" data-page="music">music</button>
+                            </div>
+                        </section>
+
+                        <section class="menu-group">
+                            <h2><span>*</span> find me on</h2>
+                            <div class="link-list blue">
+                                <a href="https://www.pinterest.com/disperzija/" target="_blank"
+                                    rel="noopener noreferrer" style="text-decoration: none;">
+                                    <button type="button" data-page="pinterest">pinterest</button>
+                                </a>
+                                <a href="https://quxnet.net/u/just70khz" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none;">
+                                    <button type="button" data-page="quxnet">quxnet</button>
+                                </a>
+                                <a href="https://cyberspace.org/" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none;">
+                                    <button type="button" data-page="cyberspace">cyberspace</button>
+                                </a>
+                                <a href="https://letterboxd.com/70khz/" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none;">
+                                    <button type="button" data-page="nekoweb">letterboxd</button>
+                                </a>
+                            </div>
+                        </section>
+                    </nav>
+
+                    <section class="mini-profile" style="font-size: 9px;">
+                        <b>sofija is currently...</b>
+                        <p><strong>WATCHING</strong> the mentalist</p>
+                        <p><strong>LISTENING TO</strong> nostalgic nintendo music</p>
+                        <p><strong>PLAYING</strong> the sims 4</p>
+                        <p><strong>READING</strong> none</p>
+                    </section>
+                </aside>
+
+                <main class="content">
+                    <div class="banner">
+                        <img src="pics/bgbgbg.jpg" alt="Soft flowers" />
+                        <h1>credits</h1>
+                    </div>
+
+                    <div class="clock-bar">
+                        <span> </span>
+                        <time id="clock"></time>
+                        <button type="button" id="theme-toggle" class="theme-toggle">dark mode</button>
+                    </div>
+
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span><span id="notice">credits &amp; thanks</span></h2>
+                        <div class="intro-row">
+                            <div class="clover" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                            <div>
+                                <p>this page is a little thank-you to the people and resources that helped inspire or make this website.</p>
+                                <p>i'm still putting the full list together, so some credits are placeholders for now!</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>site inspiration</h2>
+                        <ul class="star-list">
+                            <li>layout inspiration: <a class="link" href="https://sweet-pea.neocities.org/" target="_blank" rel="noopener noreferrer">Sweet Pea</a></li>
+                            <li>helpful tutorials: ..</li>
+                            <li>special thanks:  ..</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>resources</h2>
+                        <ul class="star-list">
+                            <li>fonts: DotGothic16 <a class="link" href="https://fonts.google.com/specimen/DotGothic16" target="_blank" rel="noopener noreferrer">Google Fonts</a></li>
+                            <li>images and graphics: everything is in this <a class="link" href="https://www.pinterest.com/disperzija/images-used-1/" target="_blank" rel="noopener noreferrer">pinterest board</a></li>
+                            <li>cursor: <a class="link" href="https://www.rw-designer.com/cursor-set/soft-pink-md" target="_blank" rel="noopener noreferrer">Soft Pink MD</a></li>
+                        </ul>
+                    </section>
+                </main>
+            </div>
+
+            <footer>
+                <span> ☆</span> made by sofija in 2026.<span> ☆</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="about-script.js"></script>
+</body>
+
+</html>

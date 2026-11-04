@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sofija's website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="icon" type="image/png" href="pics/favicon.png" />
+    <script src="https://u.widget.st/ar.js"></script>
+
+    <script>
+        try {
+            var t = localStorage.getItem("theme");
+            if (t === "dark") document.documentElement.dataset.theme = "dark";
+        } catch (e) {}
+    </script>
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="site-frame">
+
+            <!-- ===== welcome bar ===== -->
+            <header class="welcome-bar">
+                <span class="rosette">☆</span>
+                welcome to my website! feel free to leave a message in my
+                <a class="guestbook-link" href="#guestbook">guestbook!</a>
+                <span class="rosette">☆</span>
+            </header>
+
+            <div class="site-grid">
+
+                <!-- ===== left sidebar ===== -->
+                <aside class="left-side">
+
+                    <section class="calendar">
+                        <div class="calendar-head">
+                            <button type="button" id="cal-prev" aria-label="previous month">&lt;</button>
+                            <b id="cal-title" title="back to today"></b>
+                            <button type="button" id="cal-next" aria-label="next month">&gt;</button>
+                        </div>
+                        <div class="week">
+                            <i>su</i><i>m</i><i>tu</i><i>w</i><i>th</i><i>f</i><i>sa</i>
+                        </div>
+                        <div class="days" id="days"></div>
+                    </section>
+
+                    <nav aria-label="Site directory">
+
+                        <section class="menu-group">
+                            <h2><span>*</span> directory</h2>
+                            <div class="link-list green">
+                                <button type="button" data-page="index" class="selected">index</button>
+                                <button type="button" data-page="about me">about me</button>
+                                <button type="button" data-page="wishlist">wishlist</button>
+                                <button type="button" data-page="log">log</button>
+                                <button type="button" data-page="moodboard">moodboard</button>
+                                <button type="button" data-page="games">video games</button>
+                                <!--  https://aunty-games.itch.io/gourdlets-->
+                            </div>
+                        </section>
+
+                        <section class="menu-group">
+                            <h2><span>*</span> extras</h2>
+                            <div class="link-list pink">
+                                <button type="button" data-page="credits">credits</button>
+                                <!--  ok -->
+                                <button type="button" data-page="websites">cool websites</button>
+                                <button type="button" data-page="music">music</button>
+                            </div>
+                        </section>
+
+                        <section class="menu-group">
+                            <h2><span>*</span> find me on</h2>
+                            <div class="link-list blue">
+                                <a href="https://www.pinterest.com/disperzija/" target="_blank"
+                                    rel="noopener noreferrer" style="text-decoration: none;">
+                                    <button type="button" data-page="pinterest">pinterest</button>
+                                </a>
+                                <a href="https://quxnet.net/u/just70khz" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none;">
+                                    <button type="button" data-page="quxnet">quxnet</button>
+                                </a>
+                                <a href="https://cyberspace.org/" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none;">
+                                    <button type="button" data-page="cyberspace">cyberspace</button>
+                                </a>
+                                <a href="https://letterboxd.com/70khz/" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none;">
+                                    <button type="button" data-page="nekoweb">letterboxd</button>
+                                </a>
+                            </div>
+                        </section>
+
+                    </nav>
+
+                    <section class="mini-profile" style="font-size: 9px;">
+                        <b>sofija is currently...</b>
+                        <p><strong>WATCHING</strong> the mentalist</p>
+                        <p><strong>LISTENING TO</strong> nostalgic nintendo music</p>
+                        <p><strong>PLAYING</strong> the sims 4</p>
+                        <p><strong>READING</strong> none </p>
+                    </section>
+
+                </aside>
+
+                <!-- ===== main column ===== -->
+                <main class="content">
+
+                    <div class="banner">
+                        <img src="pics/bgbgbg.jpg" alt="Soft flowers" />
+
+                        <h1>welcome!</h1>
+                    </div>
+
+                    <div class="clock-bar">
+                        <span> </span>
+                        <time id="clock"></time>
+                        <button type="button" id="theme-toggle" class="theme-toggle">dark mode</button>
+                    </div>
+
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span><span id="notice">welcome to sofija's
+                                website!</span></h2>
+                        <div class="intro-row">
+                            <div class="clover" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                            <div>
+                                <p>
+                                    hii! my name is sofija, and welcome to my special little corner of the internet!
+                                    this
+                                    website is a product of my years long journey of web coding. 
+                                </p>
+                                <p>
+                                    you can suggest things
+                                    for me to add to my website
+                                    by writing me an e-mail at <a class="link" href="mailto:70khz@proton.me">70khz@proton.me</a>, or by
+                                    signing my guestbook!
+                                </p>
+                                <p>
+                                    this is initially a personal website, but i'm actively working on a second, a little
+                                    different website.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>my interests</h2>
+                        <ul class="star-list interests-list">
+                            <li>coding</li>
+                            <li>scrapbooking</li>
+                            <li>journaling</li>
+                            <li>fashion</li>
+                            <li>videogames</li>
+                            <li>linguistics</li>
+                            <li>beauty</li>
+                            <li>sketching</li>
+                            <li>hardware</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-box update-box">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>sofija's status &amp; update log...</h2>
+                        <div class="update-grid">
+                            <div class="profile-card status-card">
+                                <ws-widget type="status" iid="25925"></ws-widget>
+                            </div>
+
+                            <div class="updates">
+                                <article>
+                                    <b><span>*</span> 04/11/26</b>
+                                    <p>about page done + wishlist page started!</p>
+                                </article>
+                                <article>
+                                    <b><span>*</span> 03/11/26</b>
+                                    <p>finished the layout of the index page + started working on the about page!</p>
+                                </article>
+                                <article>
+                                    <b><span>*</span> 02/11/26</b>
+                                    <p>guestbook added from scratch + fixed some styling issues!</p>
+                                </article>
+                                <article>
+                                    <b><span>*</span> 01/11/26</b>
+                                    <p>began working on the layout, design and mapping!</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="guestbook" class="content-box guestbook">
+                        <h2 class="box-title"><span class="tiny-icon">*</span>sign my guestbook!</h2>
+                        <form id="guestbook-form">
+                            <input name="name" aria-label="Your name" placeholder="your name" maxlength="24" required />
+                            <input name="message" aria-label="Guestbook message" placeholder="type a little note..."
+                                maxlength="140" required />
+                            <button type="submit" style="font-size: 9px;">sign it!</button>
+                        </form>
+                        <div class="gb-entries" id="gb-entries"></div>
+                    </section>
+
+                </main>
+            </div>
+
+            <footer>
+                <span> ☆</span> made by sofija in 2026.<span> ☆</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
