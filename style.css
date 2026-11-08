@@ -624,20 +624,6 @@ footer span {
     background: none;
 }
 
-.past-statuses-wrap {
-    height: 130px;
-    overflow: hidden;
-    margin-top: 10px;
-    border: 1px solid var(--border, #ccc);
-}
-.past-statuses-frame {
-    width: 130.34%;   /* 100 / 0.75, so it still fills the box after scaling */
-    height: 600px;
-    border: 0;
-    margin-top: -45px;
-    transform-origin: top left;
-    transform: scale(0.75) translateY(-260px); /* scale first, then the crop offset */
-}
 
 .log-image-placeholder {
     height: 100px;
